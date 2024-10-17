@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h3>Job Application</h3>
+    <form action="">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" id="name"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="phone">Phone</label><br>
+        <input type="tel" name="phone" id="phone"><br>
+        <label for="resume">Resume</label><br>  
+        <input type="file" name="resume" id="resume"><br>
+        <label for="experience">Experience(years)</label><br>
+        <input type="number" name="counter" id="experience" min="0" max="50"><br>
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" name="checkbox" id="checkbox1"><br>
+            <label for="checkbox1">HTML</label><br>
+            <input type="checkbox" name="checkbox" id="checkbox2"><br>
+            <label for="checkbox2">CSS</label><br>
+            <input type="checkbox" name="checkbox" id="checkbox3"><br>
+            <label for="checkbox3">Javascript</label><br>
+        </fieldset>
+        <label for="education">Highest Education</label><br>
+        <select name="edu" id="education">
+            <option value="highschool">High School</option>
+            <option value="inter">Intermediate</option>
+            <option value="diploma">Diploma</option>
+            <option value="btech">B Tech</option>
+        </select>
+        <fieldset>
+            <legend>Availability</legend>
+            <label for="fulltime">Full-time</label>
+            <input type="radio" name="radio" id="fulltime">
+            <label for="parttime">Part-time</label>
+            <input type="radio" name="radio" id="parttime">
+        </fieldset>
+        <label for="comments">Addtional Comments</label><br>
+        <textarea name="comments" id="comments" cols="30" rows="3"></textarea>
+        <input type="submit" value="Submit Application">
+    </form>
+</body>
+</html>

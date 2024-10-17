@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complex Form</title>
+</head>
+<body>
+    <h2>Complex Form</h2>
+    <form action="">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob">
+            <span>Gender</span>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="india">India</option>
+                <option value="US">United States</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Address</legend>
+            <label for="street">Street</label>
+            <input type="text" name="street" id="street">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city">
+            <label for="state">State</label>
+            <input type="text" name="state" id="state">
+            <label for="street">Zip Code</label>
+            <input type="text" name="code" id="code">
+        </fieldset>
+        <fieldset>
+            <legend>Other Information</legend>
+            <label for="address">Comments</label>
+            <textarea name="address" id="address" cols="30" rows="5"></textarea>
+            <label for="checkbox">I agree to the terms of service</label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
