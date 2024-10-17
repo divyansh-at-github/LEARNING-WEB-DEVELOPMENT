@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block|Inline|Inline-block</title>
+    <style>
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .div{
+            border:1px solid black;
+            width: 200px;
+            height: 200px;
+            padding:20px;
+            margin:50px;
+            /* line-height:20px; */
+        
+        }
+       span{
+        border: 2px solid salmon;
+        height: 10000px;   /*not applicable*/
+        width:10000px;     /*not applicable*/
+        margin: 20px;      /*vertical(top and bottom) margin not applicable*/
+        padding:15px;      /*applicable*/
+       }
+       .box{
+        display: inline-block;
+        height: 150px;
+        width:150px;
+        border:2px solid slateblue;
+
+       }
+    </style>
+</head>
+<body>
+    <h3>Talk about block element</h3>
+    <ol>
+        <li>next line </li>
+        <li>space-extreme left to extreme right </li>
+        <li>custom width and height - respect </li>
+        <li>custom margin/padding- respect</li>
+    </ol>
+    <div class="divOne">
+        Block element 
+    </div>
+    <div class="div">
+        Another Block element
+    </div>
+    <h3>Talk about inline element</h3>
+    <ol>
+        <li>same line me ane ka try karte h</li>
+        <li>width-content width</li>
+        <li>custom width and height - does'nt respect</li>
+        <li>custom horizontal margin-repect</li>
+        <li>custom vertical margin- does'nt repect</li>
+        <li>custom padding- respect</li>
+    </ol>
+    <span>this is inline element</span>
+    <span>this is  another inline element</span>
+
+<h3>
+    Talk about Inline-block element
+</h3>
+<ol>
+    <li>two boxes behave like inline element </li>
+    <li>custom width and height - applicable in inline-block element</li>
+    <li>custom margin/padding- applicable in inline-block element</li>
+</ol>
+<div class="box">
+    Inline-block
+</div>
+<div class="box">
+     Another Inline-block
+</div>
+
+</body>
+</html>
