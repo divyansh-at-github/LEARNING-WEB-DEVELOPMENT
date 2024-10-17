@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+            background-color: rgb(195, 140, 246);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 50%;
+            width: 50%;
+            background-color: #fff;
+            display: flex;
+        }
+        .left{
+            background-color: rgb(103, 62, 141);
+            color: #fff;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            
+        }
+        .header,.para{
+            padding-inline: 30px;
+        }
+        .right{
+            width: 50%;
+            height: 100%;
+            background-image: url(icon.jpg);
+            background-size: cover;
+        }
+        .viewStatus{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            height: 20%;
+            align-items: center;
+        }
+        .viewStatus p{
+            font-size: 0.7rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="left">
+                <div class="header">
+                    <h2>Get Insights that help your business grow</h2>
+                </div>
+                <div class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro necessitatibus velit nostrum illum tis nam. Cum.</div>
+                <div class="viewStatus">
+
+                    <div class="comments">
+                        <h2>10K+</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="user">
+                        <h2>210</h2>
+                        <p>Paid Users</p>
+                    </div>
+                    <div class="views">
+                        <h2>10M+</h2>
+                        <p>Views</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right"></div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(127, 219, 255);
+        }
+        .container{
+            height: 100%;
+            width: 100%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+        }
+        .box{
+            height: 50%;
+            width: 20%;
+            background-color: aliceblue;
+            border-radius: 1rem;
+            padding: 0.5rem;
+        }
+        .para
+        {
+            margin-block: 1rem;
+        }
+        
+        .boxInner{
+            height: 60%;
+            width: 100%;
+            margin-bottom: 0.5rem;
+            background-color: rgb(0, 153, 255);
+            border-radius: 0.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .boxInner img{
+            width: 70%;
+            height: 70%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+           <div class="boxInner">
+            <img src="qr.png" alt="">
+           </div>
+            <div class="heading">
+                <h4>Improve your frontend skills by building projects</h4>
+            </div>
+            <div class="para">
+                <p>
+                    Scan the QR code to visit the Front End Mentor and take your coding skill to next level.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .body{
+            height:100%;
+            width: 100%;
+        }
+        .container{
+            height:100vh;
+            width: 100vw;
+           min-width: 800px;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card
+        {
+            height: 500px;
+            width: 400px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            gap: 25px;
+            text-align: center;
+        
+
+        }
+        .card img{
+            width: 100%;
+            height: 30%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .box{
+            height: 10%;
+            width: 90%;
+            border: 1px solid ;
+            border-radius: 10px;
+            margin-inline: auto;
+           
+        }
+        .payment{
+           
+            background-color:rgb(14, 14, 94) ;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .plan{
+            background-color: aquamarine;
+          display: flex;
+          
+        }
+       .left{
+        
+        width: 60%;
+        position:relative;
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+        padding-right: 4rem;
+       }
+       .right{
+        width: 40%;
+        display: flex;
+        
+        align-items: center;
+       }
+       .right a{
+        position: relative;
+        left: 85px;
+       }
+       .left img{
+        height: 100%;
+        width: 30%;
+        position: absolute;
+       }
+       .overlay{
+        height: 80%;
+        width: 50%;
+        margin-left: 8px;
+        background-color: #fff;
+        border-radius: 10px;
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="icon.jpg" alt="">
+            <h4>Order Summary</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At quibusdam quidem id commodi, est excepturi vitae aliquid qui eligendi inventore.</p>
+            <div class="box plan">
+               <div class="left">
+                <div class="overlay"></div>
+                <img src="music.png" alt="">
+                Annual plan $99.9/year
+               </div>
+               <div class="right">
+                <a href="#">Change</a>
+               </div>
+            </div>
+            <button class="box payment">Procced to Payment</button>
+            <h4>Cancel Order</h4>
+        </div>
+    </div>
+</body>
+</html>
