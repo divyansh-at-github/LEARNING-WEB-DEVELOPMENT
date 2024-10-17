@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DisplayProperty-Static|Relative|Absolute|Fixed|Sticky</title>
+    <style>
+        img{
+            height: 200px;
+            border: 3px solid blueviolet;
+            width: 250px;
+            margin:15px;
+        }
+        .container{
+            border: 1px solid black;
+            height: 8000px;
+            background-color: aquamarine;
+            position: relative;
+        }
+        .assetTwo{
+            /* position: relative; */
+            /* position: absolute;
+            top: 225px; */
+            /* right:100px; */ 
+
+            position: sticky;
+            top: 50px;
+            left: 200px;
+        }
+        .assetThree{
+            position:fixed;
+        }
+        .box{
+            height: 4000px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img 
+        src="assets/asset 0.svg" 
+        alt="asset 1"
+        class="assetOne"
+        >
+        <img 
+        src="assets/asset 1.webp" 
+        alt="asset 1"
+        class="assetTwo"
+        >
+        <img 
+        src="assets/asset 2.svg" 
+        alt="asset 1"
+        class="assetThree"
+        >
+        <img 
+        src="assets/asset 3.svg" 
+        alt="asset 1"
+        class="assetFour"
+        >
+    </div>
+    <div class="box"></div>
+</body>
+</html>
