@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQuery</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .container{
+        height: 180px;
+        width: 315px;
+        background-color: beige;
+        display: flex;
+        padding:2px;
+       }
+       .boxleft{
+        width:47%;
+        margin: 5px;
+        
+       }
+       .boxright{
+        width:47%;
+
+       }
+       p{
+        border: 1px solid aquamarine;
+        margin: 4px;
+       }
+       @media(max-width:640px){
+        .container{
+            flex-direction: column;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxleft">
+            <p>Text1</p>
+            <p>Text2</p>
+        </div>
+        <div class="boxright">
+        <img src="profile.jpg" alt="loveBabbar">
+        </div>
+        
+    </div>
+</body>
+</html>
